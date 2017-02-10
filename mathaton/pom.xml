@@ -17,6 +17,8 @@
         <version>4.12</version>
         <scope>test</scope>
     </dependency>
+
+    
 </dependencies>
 
 <build>
@@ -40,6 +42,11 @@
           <version>2.17</version>
           <configuration>
             <configLocation>checkstyle.xml</configLocation>
+            <mainClass>com.mathaton.mathaton.Mathaton</mainClass>
+              <arguments>
+                <argument>foo</argument>
+                <argument>bar</argument>
+              </arguments>
           </configuration>
         </plugin>
         <plugin>
