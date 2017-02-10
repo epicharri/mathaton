@@ -42,7 +42,7 @@
           <version>2.17</version>
           <configuration>
             <configLocation>checkstyle.xml</configLocation>
-            <mainClass>com.mathaton.mathaton.Mathaton</mainClass>
+            <mainClass>mathaton.main.Mathaton</mainClass>
               <arguments>
                 <argument>foo</argument>
                 <argument>bar</argument>

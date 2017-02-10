@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package generator;
+package mathaton.generator;
 
 /**
  *
@@ -13,12 +13,12 @@ public class PlusExercise {
     
     private int firstNumber;
     private int secondNumber;
-    
-    public PlusExercise() {
-        this.firstNumber = randomInt();
-        this.secondNumber = randomInt();
+
+    public PlusExercise(int maxNumber) {
+        this.firstNumber = randomInt(maxNumber);
+        this.secondNumber = randomInt(maxNumber);
     }
-    
+      
     // To test application logic in text based application
     // before developing gui:
     
@@ -30,9 +30,9 @@ public class PlusExercise {
         return firstNumber + secondNumber == number;
     }
     
-    public int randomInt() {
-        int a = 10;
-        double floatNumber = (Math.random() * a);
+    public int randomInt(int max) {
+        max = 10;
+        double floatNumber = (Math.random() * max);
         int number = (int) floatNumber;
         return number;
     }
